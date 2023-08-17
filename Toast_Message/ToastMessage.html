@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Block-->
+    <div class="block__btn">
+        <button href="" class="btn btn--size-s btn--success" href="">GO TO NEXT APPROVAL</button>
+        <button href="" class="btn btn--size-s btn--danger">OK</button>
+        <button href="" class="btn btn--size-s btn--error">TRY AGAIN</button>
+        <div class="btn--size-s btn--danger"></div>
+    </div>
+    <div class="block__btn">
+        <button href="" class="btn btn--success" href="">GO TO NEXT APPROVAL</button>
+        <button href="" class="btn btn--danger btn--disabled">OK</button>
+        <button href="" class="btn btn--error">TRY AGAIN</button>
+    </div>
+    <div class="block__btn">
+        <button href="" class="btn btn--size-l btn--success" href="">GO TO NEXT APPROVAL</button>
+        <button href="" class="btn btn--size-l btn--danger">OK</button>
+        <button href="" class="btn btn--size-l btn--error">TRY AGAIN</button>
+    </div>
+    <!-- Toast Message  -->
+    <div>
+        <div id="toast" style ="z-index: 1000 !important">
+
+        </div>
+
+        <div class="btn__container">
+            <div onclick="showSuccessToast();" class="btn btn--success">Show Success Toast</div>
+            <div onclick="showDangerToast();" class="btn btn--danger">Show Danger Toast</div>
+            <div onclick="showErrorToast();" class="btn btn--error">Show Error Toast</div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
